@@ -1,7 +1,7 @@
 FROM resnullius/alpine:edge
 MAINTAINER Jose-Luis Rivas <me@ghostbar.co>
 
-RUN apk-install offlineimap && \
+RUN apk-install offlineimap ca-certificates && \
       addgroup -g 1000 user && \
       adduser -D -h /home/user -G user -u 1000 user
 
