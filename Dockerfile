@@ -1,5 +1,5 @@
-FROM resnullius/alpine:edge
-MAINTAINER Jose-Luis Rivas <me@ghostbar.co>
+FROM alpine:3.7
+MAINTAINER Michał 'rysiek' Woźniak <rysiek@occrp.org>
 
 RUN apk-install offlineimap ca-certificates && \
       addgroup -g 1000 user && \
