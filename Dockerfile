@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Michał 'rysiek' Woźniak <rysiek@occrp.org>
 
-RUN apk-install offlineimap ca-certificates && \
+RUN apk install offlineimap ca-certificates && \
       addgroup -g 1000 user && \
       adduser -D -h /home/user -G user -u 1000 user
 
