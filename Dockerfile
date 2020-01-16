@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.8
 MAINTAINER Michał 'rysiek' Woźniak <rysiek@occrp.org>
 
 RUN apk add offlineimap ca-certificates && \
